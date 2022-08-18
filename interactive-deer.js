@@ -21,7 +21,10 @@ function setSize() {
     menuContainer.style.height = `${height}px`;
 }
 
-
+/*
+When a section of the image is clicked, a menu box will be created and displayed
+containing a link to a video and links to recipes.
+*/
 imageContainer.addEventListener('click', showMenu);
 
 function showMenu(e) {
