@@ -4,3 +4,30 @@ body {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.deer {
+    position: relative;
+}
+.on-top {
+    width: 940px;
+    position: absolute;
+    top: 320px;
+    left: 120px;
+}
+.word-color {
+    fill: rgb(205,59,43);
+    fill-rule:nonzero;
+}
+#loin-section:hover {
+    opacity: 0.8;
+}
+
+/*
+.top-round,
+.bottom-round,
+.flank,
+.rump,
+.leg,
+.shoulder {
+    opacity: 0.2;
+}
+*/
