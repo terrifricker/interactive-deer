@@ -4,10 +4,10 @@ body {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.deer {
+.deer-image {
     position: relative;
 }
-.on-top {
+.cut-text {
     width: 940px;
     position: absolute;
     top: 320px;
@@ -18,7 +18,7 @@ body {
     fill-rule:nonzero;
 }
 #loin-section:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 /*
