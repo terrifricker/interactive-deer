@@ -1,18 +1,54 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root {
+    --menu-width: 200px;
+    --menu-height: 300px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.deer-image {
-    position: relative;
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.cut-text {
-    width: 940px;
+svg {
+    width: 50vw;
+    height: 80vh;
+}
+.menu {
+    opacity: 0;
+    transition: all 500ms ease-out;
     position: absolute;
-    top: 320px;
-    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2pt solid #544321;
+}
+.video-link {
+    margin: 2rem;
+    font-size: 1em;
+}
+.recipe-section {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2pt solid orange;
+}
+.recipe {
+    margin: 0.5rem;
 }
 .word:hover {
+    cursor: pointer;
     opacity: 0.5;
 }
