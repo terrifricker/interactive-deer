@@ -13,18 +13,6 @@ body {
     top: 320px;
     left: 120px;
 }
-
-#loin-section:hover {
+.word:hover {
     opacity: 0.5;
 }
-
-/*
-.top-round,
-.bottom-round,
-.flank,
-.rump,
-.leg,
-.shoulder {
-    opacity: 0.2;
-}
-*/
