@@ -12,6 +12,11 @@ body {
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+    width: 100vw;
+    height: 125px; /* set based on height of header on fromfieldtoplate.com */
+    background-color: #544321;
+}
 main {
     width: 100vw;
     height: 100vh;
