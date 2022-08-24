@@ -12,16 +12,21 @@ body {
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+    width: 100vw;
+    height: 125px; /* set based on height of header on fromfieldtoplate.com */
+    background-color: #544321;
+}
 main {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 125px);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 svg {
     width: 50vw;
-    height: 80vh;
+    height: 65vh;
 }
 .menu {
     opacity: 0;
