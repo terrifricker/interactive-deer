@@ -79,7 +79,7 @@ function showMenu(e) {
     // calculate translation to 2/3 window over, 1/2 window down (less the header height)
     let window_width = window.innerWidth;
     let window_height = window.innerHeight + 125; // less the header height
-    let translate_x = window_width * 2/3 - click_x - 100;
+    let translate_x = window_width * 3/4 - click_x - 100;
     let translate_y = window_height * 1/2 - click_y - 150;
 
     // don't translate until rendered, using setTimeout()
