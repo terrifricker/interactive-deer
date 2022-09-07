@@ -14,19 +14,20 @@ body {
 }
 header {
     width: 100vw;
-    height: 125px; /* set based on height of header on fromfieldtoplate.com */
+    height: 75px;
     background-color: #544321;
 }
 main {
     width: 100vw;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 75px);
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
 }
 svg {
-    width: 50vw;
-    height: 65vh;
+    height: 45vh;
 }
 .menu-container {
     display: flex;
@@ -69,4 +70,19 @@ img {
 .word:hover {
     cursor: pointer;
     opacity: 0.5;
+}
+
+
+@media only screen and (min-width: 900px) {
+    header {
+        height: 125px; /* set based on height of header on fromfieldtoplate.com */
+    }
+    main {
+        height: calc(100vh - 125px);
+        flex-direction: row;
+    }
+    svg {
+        width: 50vw;
+        height: 65vh;
+    }
 }
