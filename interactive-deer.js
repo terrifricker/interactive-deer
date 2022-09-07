@@ -1,25 +1,33 @@
 /*
-There will be two elements on the page side by side, the image container and
+There will be two elements on the page, the image container and
 the menu container.
 */
 const imageContainer = document.querySelector(".svg-image-container");
 const menuContainer = document.querySelector(".menu-container");
 
-/*
-Flexbox will be used for the layout, so the size of the menu container needs
-to be set to the same size as the image container.  Function setSize() does that.
-*/
-setSize(); // set the size initially, and
-window.addEventListener('resize', setSize); // reset size on each window resize
+/* The imageContainer size is based on the size of viewport.  The size of the menuContainer
+changes with the size of the imageContainer. */
+setMenuContainerSize(); // set the size initially, and
+window.addEventListener('resize', setMenuContainerSize()); // reset size on each window resize
 
-function setSize() {
+function setMenuContainerSize() {
+    // if mobile, height equal to height of the imageContainer
+    if (window.screen.availWidth < 900) {
+        height = imageContainer.getBoundingClientRect()['height'].toString();
+        width = screenWidth; // 70vw conversion
+    }
+    else {
     // set the size of the menuContainer equal to the size of the imageContainer
     width = imageContainer.getBoundingClientRect()['width'].toString();
     height = imageContainer.getBoundingClientRect()['height'].toString();
+    }
+
     console.log(width, height);
     menuContainer.style.width = `${width}px`;
     menuContainer.style.height = `${height}px`;
 }
+
+
 
 /*
 When a section of the image is clicked, a menu box will be created and displayed
