@@ -5,8 +5,9 @@ the menu container.
 const imageContainer = document.querySelector(".svg-image-container");
 const menuContainer = document.querySelector(".menu-container");
 
-/* The imageContainer size is based on the size of viewport.  The size of the menuContainer
-changes with the size of the imageContainer. */
+/* The imageContainer size is based on the size of viewport with css.
+This function sets the size of the menuContainer based on the size of the 
+imageContainer to make flexbox work. */
 setMenuContainerSize(); // set the size initially, and
 window.addEventListener('resize', setMenuContainerSize()); // reset size on each window resize
 
@@ -24,8 +25,6 @@ function setMenuContainerSize() {
     menuContainer.style.width = `${width}px`;
     menuContainer.style.height = `${height}px`;
 }
-
-
 
 /*
 When a section of the image is clicked, a menu box will be created and displayed
