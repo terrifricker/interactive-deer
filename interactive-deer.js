@@ -21,8 +21,6 @@ function setMenuContainerSize() {
     width = imageContainer.getBoundingClientRect()['width'].toString();
     height = imageContainer.getBoundingClientRect()['height'].toString();
     }
-
-    console.log(width, height);
     menuContainer.style.width = `${width}px`;
     menuContainer.style.height = `${height}px`;
 }
