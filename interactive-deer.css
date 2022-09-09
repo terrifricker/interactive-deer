@@ -46,6 +46,8 @@ img {
 }
 .menu {
     opacity: 0;
+    width: 10px;
+    height: 10px;
     transition: all 500ms ease-out;
     position: absolute;
     display: flex;
