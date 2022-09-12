@@ -33,8 +33,7 @@ containing a link to a video and links to recipes.
 imageContainer.addEventListener('click', showMenu);
 
 function showMenu(e) {
-
-  // if there is already a menu, remove it
+    // if there is already a menu, remove it
     if (menuContainer.firstChild) {
         menuContainer.removeChild(menuContainer.firstChild)
     };
@@ -65,10 +64,9 @@ function showMenu(e) {
     newMenuDiv.appendChild(newVideoLink);
     newMenuDiv.appendChild(newRecipeSecion);
 
-
-    // get click coordinates
-    let click_x = e.clientX - 100;
-    let click_y = e.clientY -150;
+    // center menu on cick coordinates
+    let click_x = e.clientX;
+    let click_y = e.clientY;
   
     // add units for css
     let click_x_in_pixels = click_x+'px';
@@ -81,12 +79,23 @@ function showMenu(e) {
     // add the new menu to the DOM
     menuContainer.appendChild(newMenuDiv);
 
-    // calculate translation to 2/3 window over, 1/2 window down (less the header height)
+    // calculate translation 
     let window_width = window.innerWidth;
-    let window_height = window.innerHeight + 125; // less the header height
-    let translate_x = window_width * 3/4 - click_x - 100;
-    let translate_y = window_height * 1/2 - click_y - 150;
+    let window_height = window.innerHeight;
+    let translate_x = 0;
+    let translate_y = 0;
 
+    // if mobile, to center of bottom half
+    if (window_width < 900) {
+        translate_x = window_width * 1/2 - click_x - 100;
+        translate_y = window_height * 3/4 - click_y - 150 + 75;
+    }
+    // if desktop, to 3/4 window over, 1/2 window down
+    else {
+        translate_x = window_width * 3/4 - click_x - 100;
+        translate_y = window_height * 1/2 - click_y - 150 + 75;
+    }
+    
     // don't translate until rendered, using setTimeout()
     setTimeout( () => {
         // grow size
