@@ -71,8 +71,15 @@ img {
 .recipe {
     margin: 0.5rem;
 }
-.word:hover {
+.word {
     cursor: pointer;
+}
+.word:link,
+.word:visited {
+    opacity: 1;
+}
+.word:hover,
+.word:active {
     opacity: 0.5;
 }
 
