@@ -9,13 +9,13 @@ const menuContainer = document.querySelector(".menu-container");
 This function sets the size of the menuContainer based on the size of the 
 imageContainer to make flexbox work. */
 setMenuContainerSize(); // set the size initially, and
-window.addEventListener('resize', setMenuContainerSize()); // reset size on each window resize
+window.addEventListener('resize', setMenuContainerSize); // reset size on each window resize
 
 function setMenuContainerSize() {
     // if mobile, height equal to height of the imageContainer
     if (window.screen.availWidth < 900) {
         height = imageContainer.getBoundingClientRect()['height'].toString();
-        width = screenWidth; // 70vw conversion
+        width = window.screen.availWidth;
     }
     else {
     // set the size of the menuContainer equal to the size of the imageContainer
