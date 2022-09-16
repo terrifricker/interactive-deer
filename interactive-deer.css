@@ -56,7 +56,6 @@ svg {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1pt solid orange;
 }
 .instructions {
     width: 50%;
