@@ -11,6 +11,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3f3317
 }
 header {
     width: 100vw;
@@ -24,6 +25,13 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+p {
+    font-size: 0.8rem;
 }
 .svg-image-container {
     padding: 10px;
@@ -40,9 +48,18 @@ svg {
     background-repeat: no-repeat;
     background-position: center;
 }
-img {
-    width: 40vw;
-    height: 60vh;
+.instructions-container {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1pt solid orange;
+}
+.instructions {
+    width: 50%;
 }
 .menu {
     opacity: 0;
