@@ -86,13 +86,13 @@ function showMenu(e) {
 
     // if mobile, to center of bottom half
     if (window_width < 900) {
-        translate_x = window_width * 1/2 - click_x - 100;
-        translate_y = window_height * 3/4 - click_y - 150 + 75;
+        translate_x = window_width * 0.2 - click_x;
+        translate_y = window_height * 0.55 - click_y + 20;
     }
     // if desktop, to 3/4 window over, 1/2 window down
     else {
-        translate_x = window_width * 3/4 - click_x - 100;
-        translate_y = window_height * 1/2 - click_y - 150 + 75;
+        translate_x = window_width * 0.55 - click_x;
+        translate_y = window_height * 0.2 - click_y + 75;
     }
     
     // don't translate until rendered, using setTimeout()
