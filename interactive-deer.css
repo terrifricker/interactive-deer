@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 :root {
-    --menu-width: 200px;
-    --menu-height: 300px;
+    --menu-width: 60vw;
+    --menu-height: 40vh;
 }
 body {
     width: 100vw;
@@ -96,6 +96,10 @@ svg {
 
 
 @media only screen and (min-width: 900px) {
+    :root {
+        --menu-width: 40vw;
+        --menu-height: 60vh;
+    }
     header {
         height: 125px; /* set based on height of header on fromfieldtoplate.com */
     }
