@@ -1,5 +1,5 @@
 /*
-There will be two elements on the page, the image container and
+There will be two main elements on the page, the image container and
 the menu container.
 */
 const imageContainer = document.querySelector(".svg-image-container");
@@ -33,11 +33,10 @@ containing a link to a video and links to recipes.
 imageContainer.addEventListener('click', showMenu);
 
 function showMenu(e) {
-    // if there is already a menu, remove it
-    if (menuContainer.firstChild) {
-        menuContainer.removeChild(menuContainer.firstChild)
-    };
-
+    if (menuContainer.firstElementChild) {
+        menuContainer.firstElementChild.remove();
+    }
+    
     // get name of area in image that was clicked
     let targetName = e.target.classList[0];
     let targetNameCapitalized = targetName.charAt(0).toUpperCase() + targetName.slice(1);
@@ -87,13 +86,13 @@ function showMenu(e) {
 
     // if mobile, to center of bottom half
     if (window_width < 900) {
-        translate_x = window_width * 1/2 - click_x - 100;
-        translate_y = window_height * 3/4 - click_y - 150 + 75;
+        translate_x = window_width * 0.2 - click_x;
+        translate_y = window_height * 0.55 - click_y + 20;
     }
     // if desktop, to 3/4 window over, 1/2 window down
     else {
-        translate_x = window_width * 3/4 - click_x - 100;
-        translate_y = window_height * 1/2 - click_y - 150 + 75;
+        translate_x = window_width * 0.55 - click_x;
+        translate_y = window_height * 0.2 - click_y + 75;
     }
     
     // don't translate until rendered, using setTimeout()
