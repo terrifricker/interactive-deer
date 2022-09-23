@@ -1,5 +1,5 @@
 /*
-There will be two elements on the page, the image container and
+There will be two main elements on the page, the image container and
 the menu container.
 */
 const imageContainer = document.querySelector(".svg-image-container");
@@ -33,11 +33,10 @@ containing a link to a video and links to recipes.
 imageContainer.addEventListener('click', showMenu);
 
 function showMenu(e) {
-    // if there is already a menu, remove it
-    if (menuContainer.firstChild) {
-        menuContainer.removeChild(menuContainer.firstChild)
-    };
-
+    if (menuContainer.firstElementChild) {
+        menuContainer.firstElementChild.remove();
+    }
+    
     // get name of area in image that was clicked
     let targetName = e.target.classList[0];
     let targetNameCapitalized = targetName.charAt(0).toUpperCase() + targetName.slice(1);
