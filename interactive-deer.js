@@ -47,8 +47,17 @@ function showMenu(e) {
 
     // create video link
     let newVideoLink = document.createElement('a');
+    newVideoLink.target="_blank";
+
+    // set video to Jeremiah's backleg video
+    newVideoLink.href = "https://www.youtube.com/watch?v=JNK-KTMPzZI";
+    let videoLinkLabel = document.createTextNode(`Back Leg Butchering Video`);
+
+    /* Set video dynamically
     newVideoLink.href = `https://fromfieldtoplate.com/video/${targetName}`;
-    let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Video`);
+    let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Butchering Video`);
+    */
+
     newVideoLink.appendChild(videoLinkLabel);
     newVideoLink.classList.add("video-link");
 
