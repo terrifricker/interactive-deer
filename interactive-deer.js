@@ -56,9 +56,9 @@ function showMenu(e) {
     /* Set video dynamically
     newVideoLink.href = `https://fromfieldtoplate.com/video/${targetName}`;
     */
-
     let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Butchering Video`);
     
+
     newVideoLink.appendChild(videoLinkLabel);
     newVideoLink.classList.add("video-link");
 
@@ -71,14 +71,26 @@ function showMenu(e) {
     newRecipeLink1.target = "_blank";
     newRecipeLink1.title = "Click for Recipe";
     newRecipeLink1.href = "https://fromfieldtoplate.com/2022/03/20/venison-big-mac-burgers/";
+    let recipeLinkLabel1 = document.createTextNode("Venison Big Mac Burgers");
+    newRecipeLink1.appendChild(recipeLinkLabel1);
+    newRecipeLink1.classList.add("recipe-link");
+
     let newRecipeLink2 = document.createElement('a');
     newRecipeLink2.target = "_blank";
     newRecipeLink2.title = "Click for Recipe";
     newRecipeLink2.href = "https://fromfieldtoplate.com/2016/04/08/drunken-wild-game-fries-guinness-gravy/";
+    let recipeLinkLabel2 = document.createTextNode("Drunken Wild Game Fries");
+    newRecipeLink2.appendChild(recipeLinkLabel2);
+    newRecipeLink2.classList.add("recipe-link");
+
     let newRecipeLink3 = document.createElement('a');
     newRecipeLink3.target = "_blank";
     newRecipeLink3.title = "Click for Recipe";
     newRecipeLink3.href = "https://fromfieldtoplate.com/2019/12/19/crispy-orange-peel-venison/";
+    let recipeLinkLabel3 = document.createTextNode("Crispy Orange Peel Venison");
+    newRecipeLink3.appendChild(recipeLinkLabel3);
+    newRecipeLink3.classList.add("recipe-link");
+
 
     // build entire menu
     newMenuDiv.appendChild(newVideoLink);
