@@ -64,8 +64,19 @@ function showMenu(e) {
     let newRecipeSection = document.createElement('div');
     newRecipeSection.classList.add("recipe-section");
 
-    //create a recipe link
-    let newRecipeLink = document.createElement('a');
+    //create recipe links
+    let newRecipeLink1 = document.createElement('a');
+    newRecipeLink1.target = "_blank";
+    newRecipeLink1.title = "Click for Recipe";
+    newRecipeLink1.href = "https://fromfieldtoplate.com/2022/03/20/venison-big-mac-burgers/";
+    let newRecipeLink2 = document.createElement('a');
+    newRecipeLink2.target = "_blank";
+    newRecipeLink2.title = "Click for Recipe";
+    newRecipeLink2.href = "https://fromfieldtoplate.com/2016/04/08/drunken-wild-game-fries-guinness-gravy/";
+    let newRecipeLink3 = document.createElement('a');
+    newRecipeLink3.target = "_blank";
+    newRecipeLink3.title = "Click for Recipe";
+    newRecipeLink3.href = "https://fromfieldtoplate.com/2019/12/19/crispy-orange-peel-venison/";
 
     // build entire menu
     newMenuDiv.appendChild(newVideoLink);
