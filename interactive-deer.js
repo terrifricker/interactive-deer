@@ -47,21 +47,56 @@ function showMenu(e) {
 
     // create video link
     let newVideoLink = document.createElement('a');
+    newVideoLink.target = "_blank";
+    newVideoLink.title = "Click for Video";
+
+    // set video to Jeremiah's backleg video
+    newVideoLink.href = "https://www.youtube.com/watch?v=JNK-KTMPzZI";
+
+    /* Set video dynamically
     newVideoLink.href = `https://fromfieldtoplate.com/video/${targetName}`;
-    let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Video`);
+    */
+    let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Butchering Video`);
+    
+
     newVideoLink.appendChild(videoLinkLabel);
     newVideoLink.classList.add("video-link");
 
     // create recipe section
-    let newRecipeSecion = document.createElement('div');
-    newRecipeSecion.classList.add("recipe-section");
+    let newRecipeSection = document.createElement('div');
+    newRecipeSection.classList.add("recipe-section");
 
-    //create a recipe link
-    let newRecipeLink = document.createElement('a');
+    //create recipe links
+    let newRecipeLink1 = document.createElement('a');
+    newRecipeLink1.target = "_blank";
+    newRecipeLink1.title = "Click for Recipe";
+    newRecipeLink1.href = "https://fromfieldtoplate.com/2022/03/20/venison-big-mac-burgers/";
+    let recipeLinkLabel1 = document.createTextNode("Venison Big Mac Burgers");
+    newRecipeLink1.appendChild(recipeLinkLabel1);
+    newRecipeLink1.classList.add("recipe-link");
 
+    let newRecipeLink2 = document.createElement('a');
+    newRecipeLink2.target = "_blank";
+    newRecipeLink2.title = "Click for Recipe";
+    newRecipeLink2.href = "https://fromfieldtoplate.com/2016/04/08/drunken-wild-game-fries-guinness-gravy/";
+    let recipeLinkLabel2 = document.createTextNode("Drunken Wild Game Fries");
+    newRecipeLink2.appendChild(recipeLinkLabel2);
+    newRecipeLink2.classList.add("recipe-link");
+
+    let newRecipeLink3 = document.createElement('a');
+    newRecipeLink3.target = "_blank";
+    newRecipeLink3.title = "Click for Recipe";
+    newRecipeLink3.href = "https://fromfieldtoplate.com/2019/12/19/crispy-orange-peel-venison/";
+    let recipeLinkLabel3 = document.createTextNode("Crispy Orange Peel Venison");
+    newRecipeLink3.appendChild(recipeLinkLabel3);
+    newRecipeLink3.classList.add("recipe-link");
+
+    // add recipes to recipe section
+    newRecipeSection.append(newRecipeLink1, newRecipeLink2, newRecipeLink3);
+    
     // build entire menu
     newMenuDiv.appendChild(newVideoLink);
-    newMenuDiv.appendChild(newRecipeSecion);
+    newMenuDiv.appendChild(newRecipeSection);
 
     // center menu on cick coordinates
     let click_x = e.clientX;
