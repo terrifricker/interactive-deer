@@ -61,15 +61,15 @@ function showMenu(e) {
     newVideoLink.classList.add("video-link");
 
     // create recipe section
-    let newRecipeSecion = document.createElement('div');
-    newRecipeSecion.classList.add("recipe-section");
+    let newRecipeSection = document.createElement('div');
+    newRecipeSection.classList.add("recipe-section");
 
     //create a recipe link
     let newRecipeLink = document.createElement('a');
 
     // build entire menu
     newMenuDiv.appendChild(newVideoLink);
-    newMenuDiv.appendChild(newRecipeSecion);
+    newMenuDiv.appendChild(newRecipeSection);
 
     // center menu on cick coordinates
     let click_x = e.clientX;
