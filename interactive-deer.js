@@ -91,7 +91,9 @@ function showMenu(e) {
     newRecipeLink3.appendChild(recipeLinkLabel3);
     newRecipeLink3.classList.add("recipe-link");
 
-
+    // add recipes to recipe section
+    newRecipeSection.append(newRecipeLink1, newRecipeLink2, newRecipeLink3);
+    
     // build entire menu
     newMenuDiv.appendChild(newVideoLink);
     newMenuDiv.appendChild(newRecipeSection);
