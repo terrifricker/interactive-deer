@@ -48,6 +48,7 @@ function showMenu(e) {
     // create video link
     let newVideoLink = document.createElement('a');
     newVideoLink.target="_blank";
+    newVideoLink.title="Click for Video";
 
     // set video to Jeremiah's backleg video
     newVideoLink.href = "https://www.youtube.com/watch?v=JNK-KTMPzZI";
