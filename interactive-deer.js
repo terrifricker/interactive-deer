@@ -52,11 +52,9 @@ function showMenu(e) {
 
     // set video to Jeremiah's backleg video
     newVideoLink.href = "https://www.youtube.com/watch?v=JNK-KTMPzZI";
-    let videoLinkLabel = document.createTextNode(`Back Leg Butchering Video`);
 
     /* Set video dynamically
     newVideoLink.href = `https://fromfieldtoplate.com/video/${targetName}`;
-    let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Butchering Video`);
     */
 
     newVideoLink.appendChild(videoLinkLabel);
