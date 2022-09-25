@@ -57,6 +57,8 @@ function showMenu(e) {
     newVideoLink.href = `https://fromfieldtoplate.com/video/${targetName}`;
     */
 
+    let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Butchering Video`);
+    
     newVideoLink.appendChild(videoLinkLabel);
     newVideoLink.classList.add("video-link");
 
