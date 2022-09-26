@@ -28,7 +28,6 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1pt solid dodgerblue;
 }
 h2, h3 {
     font-size: 1.2rem;
@@ -40,19 +39,15 @@ h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1pt solid hotpink;
 }
 svg {
     height: 40vh;
-    border: 1pt solid yellow;
 }
 .menu-container {
     flex: 1 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1pt solid salmon;
-
     /*
     background-image: url("interactive-frame.png");
     background-size: contain;
@@ -68,11 +63,9 @@ svg {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1pt solid gold;
 }
 .instructions {
     width: 80%;
-    border: 1pt solid greenyellow;
 }
 .menu {
     opacity: 0;
@@ -84,20 +77,12 @@ svg {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1pt solid red;
-}
-.video-section {
-    border: 1pt solid green;
-}
-.video-link {
-    border: 1pt solid cyan;
 }
 .recipe-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1pt solid orange;
 }
 .recipe-link-section {
     display: flex;
@@ -105,10 +90,6 @@ svg {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    border: 1pt solid yellow;
-}
-.recipe-link {
-    border: 1pt solid blueviolet;
 }
 .word:hover {
     cursor: pointer;
