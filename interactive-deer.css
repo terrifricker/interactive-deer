@@ -34,11 +34,7 @@ h2, h3 {
     text-align: center;
     padding: 10px;
 }
-p {
-    font-size: 0.8rem;
-}
 .svg-image-container {
-    padding: 10px;
     flex: 1 1;
 }
 svg {
