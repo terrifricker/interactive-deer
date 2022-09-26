@@ -73,8 +73,15 @@ function showMenu(e) {
     // add header and video link to section
     newVideoSection.append(newVideoHeader, newVideoLink);
 
+    // create recipe section ( will have header and three recipe links )
     let newRecipeSection = document.createElement('div');
     newRecipeSection.classList.add("recipe-section");
+
+    // create recipe header
+    let newRecipeHeader = document.createElement('h3');
+    let newRecipeHeaderText = document.createTextNode(`${targetNameCapitalized} Recipe Links`);
+    newRecipeHeader.appendChild(newRecipeHeaderText);
+    newRecipeHeader.classList.add("recipe-header");
 
     //create recipe links
     let newRecipeLink1 = document.createElement('a');
@@ -101,11 +108,11 @@ function showMenu(e) {
     newRecipeLink3.appendChild(recipeLinkLabel3);
     newRecipeLink3.classList.add("recipe-link");
 
-    // add recipes to recipe section
-    newRecipeSection.append(newRecipeLink1, newRecipeLink2, newRecipeLink3);
+    // add header and recipes to recipe section
+    newRecipeSection.append(newRecipeHeader, newRecipeLink1, newRecipeLink2, newRecipeLink3);
     
     // build entire menu
-    newMenuDiv.appendChild(newVideoLink);
+    newMenuDiv.appendChild(newVideoSection);
     newMenuDiv.appendChild(newRecipeSection);
 
     // center menu on cick coordinates
