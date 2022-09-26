@@ -138,7 +138,7 @@ function showMenu(e) {
 
     // if mobile, to center of bottom half
     if (window_width < 900) {
-        translate_x = window_width * 0.2 - click_x;
+        translate_x = window_width * 0.1 - click_x;
         translate_y = window_height * 0.55 - click_y + 20;
     }
     // if desktop, to 3/4 window over, 1/2 window down
