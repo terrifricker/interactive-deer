@@ -25,6 +25,10 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-image: url("https://frickersolutions.com/images/interactive-deer-background-2-20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 h2, h3 {
     font-size: 1.2rem;
