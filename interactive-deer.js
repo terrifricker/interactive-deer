@@ -41,9 +41,19 @@ function showMenu(e) {
     let targetName = e.target.classList[0];
     let targetNameCapitalized = targetName.charAt(0).toUpperCase() + targetName.slice(1);
 
-    // create the menu div
+    // create the menu div ( will have video section and recipe section )
     let newMenuDiv = document.createElement('div');
     newMenuDiv.classList.add("menu");
+    
+    //create video section ( will have a header and video link )
+    let newVideoSection = document.createElement('div');
+    newVideoSection.classList.add("video-section");
+
+    // create video header
+    let newVideoHeader = document.createElement('h3');
+    let newVideoHeaderText = document.createTextNode("Video Link");
+    newVideoHeader.appendChild(newVideoHeaderText);
+    newVideoHeader.classList.add("video-header");
 
     // create video link
     let newVideoLink = document.createElement('a');
@@ -57,12 +67,12 @@ function showMenu(e) {
     newVideoLink.href = `https://fromfieldtoplate.com/video/${targetName}`;
     */
     let videoLinkLabel = document.createTextNode(`${targetNameCapitalized} Butchering Video`);
-    
-
     newVideoLink.appendChild(videoLinkLabel);
     newVideoLink.classList.add("video-link");
 
-    // create recipe section
+    // add header and video link to section
+    newVideoSection.append(newVideoHeader, newVideoLink);
+
     let newRecipeSection = document.createElement('div');
     newRecipeSection.classList.add("recipe-section");
 
