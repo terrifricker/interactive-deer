@@ -89,8 +89,14 @@ svg {
     justify-content: space-around;
     align-items: center;
 }
-.recipe {
-    margin: 0.5rem;
+.recipe-link-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border: 1pt solid yellow;
+}
 }
 .word:hover {
     cursor: pointer;
