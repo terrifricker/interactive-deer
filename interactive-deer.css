@@ -81,7 +81,6 @@ svg {
     font-size: 1em;
 }
 .recipe-section {
-    margin: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
