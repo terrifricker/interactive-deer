@@ -73,7 +73,7 @@ function showMenu(e) {
     // add header and video link to section
     newVideoSection.append(newVideoHeader, newVideoLink);
 
-    // create recipe section ( will have header and three recipe links )
+    // create recipe section ( will have header and a section of three recipe links )
     let newRecipeSection = document.createElement('div');
     newRecipeSection.classList.add("recipe-section");
 
@@ -83,7 +83,11 @@ function showMenu(e) {
     newRecipeHeader.appendChild(newRecipeHeaderText);
     newRecipeHeader.classList.add("recipe-header");
 
-    //create recipe links
+    // create recipe link section
+    let newRecipeLinkSection = document.createElement('div');
+    newRecipeLinkSection.classList.add("recipe-link-section");
+
+    // create recipe links
     let newRecipeLink1 = document.createElement('a');
     newRecipeLink1.target = "_blank";
     newRecipeLink1.title = "Click for Recipe";
@@ -107,9 +111,12 @@ function showMenu(e) {
     let recipeLinkLabel3 = document.createTextNode("Crispy Orange Peel Venison");
     newRecipeLink3.appendChild(recipeLinkLabel3);
     newRecipeLink3.classList.add("recipe-link");
+    
+    // add recipe links to recipe link section
+    newRecipeLinkSection.append(newRecipeLink1, newRecipeLink2, newRecipeLink3);
 
     // add header and recipes to recipe section
-    newRecipeSection.append(newRecipeHeader, newRecipeLink1, newRecipeLink2, newRecipeLink3);
+    newRecipeSection.append(newRecipeHeader, newRecipeLinkSection);
     
     // build entire menu
     newMenuDiv.appendChild(newVideoSection);
