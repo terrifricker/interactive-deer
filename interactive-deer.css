@@ -26,8 +26,9 @@ main {
     justify-content: space-around;
     align-items: center;
 }
-h2 {
+h2, h3 {
     font-size: 1.2rem;
+    text-align: center;
     padding: 10px;
 }
 p {
@@ -72,7 +73,6 @@ svg {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 2pt solid #544321;
 }
 .video-link {
     margin: 2rem;
@@ -84,7 +84,6 @@ svg {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 2pt solid orange;
 }
 .recipe {
     margin: 0.5rem;
